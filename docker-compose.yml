@@ -1,0 +1,11 @@
+ersion: '3'
+
+services:
+  app:
+    environment:
+      - TF_ENABLE_ONEDNN_OPTS=0
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
