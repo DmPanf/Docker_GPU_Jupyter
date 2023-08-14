@@ -1,9 +1,8 @@
 # Set up machine learning models with Label Studio
 
-- 
+- **🌐 https://github.com/HumanSignal/labelImg**
 
 ## Ubuntu Linux
-
 <p><code>
 sudo apt-get install pyqt5-dev-tools
 sudo pip3 install -r requirements/requirements-linux-python3.txt
