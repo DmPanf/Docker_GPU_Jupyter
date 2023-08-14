@@ -24,6 +24,15 @@ os.system('pyrcc5 -o libs/resources.py resources.qrc')
 os.system('python labelImg.py')
 </code></p>
 
+## Windows + Anaconda
+<p><code>
+conda install pyqt=5
+conda install -c anaconda lxml
+pyrcc5 -o libs/resources.py resources.qrc
+python labelImg.py
+python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+</code></p>
+
 ## Use Docker
 <p><code>
 docker run -it \
