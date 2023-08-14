@@ -23,3 +23,8 @@ os.chdir('Labelimg')
 os.system('pyrcc5 -o libs/resources.py resources.qrc')
 os.system('python labelImg.py')
 </code></p>
+
+
+---
+
+![image](https://github.com/DmPanf/Docker_GPU_Jupyter/assets/99917230/ee0ae455-cc0f-4c7b-8794-9b11be276490)
