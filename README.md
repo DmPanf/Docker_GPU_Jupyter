@@ -1,4 +1,4 @@
-### Anaconda Jupyter Notebook in Dockerfile with GPU for RTX 3090 Ti
+### Anaconda Jupyter Notebook for YOLOv8 in Dockerfile with GPU for RTX 3090 Ti
 
 **Dockerfile** - инструкции для сборки образа Docker.
 
