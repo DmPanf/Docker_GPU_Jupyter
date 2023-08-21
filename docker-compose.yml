@@ -1,0 +1,29 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  jupyter:
+    build: .
+    runtime: nvidia  # Для использования GPU
+    ipc: host  # использовать IPC хоста
+    environment:
+      - JUPYTER_TOKEN=Pa$$wd-345  # Установка токена для Jupyter
+      #- TF_ENABLE_ONEDNN_OPTS=0
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - NVIDIA_VISIBLE_DEVICES=all
+    deploy:
+      resources:
+        limits:
+          memory: 30G  # максимальный объем оперативной памяти
+          cpus: "6"  # количество CPU, которое будет использоваться
+        reservations:
+          memory: 16G  # минимальный объем оперативной памяти
+          cpus: "2"  # минимальное количество CPU
+    ulimits:
+      memlock: -1
+      stack: 67108864  # размер стека в байтах (64 MB)
+    ports:
+      - "8001:8001"  # Проброс порта
+    volumes:
+      - .:/app  # Подключение текущей папки к /app в контейнере
+    command: ["jupyter", "notebook", "--port=8001", "--no-browser", "--ip=0.0.0.0", "--allow-root"]  # Запуск Jupyter Notebook с нужными параметрами
