@@ -9,7 +9,7 @@
 
 ### Базовые команды:
 
-- Создание Dockerfile: [`docker build -t my_fastapi_app .`]
+- Создание Dockerfile: [`docker build -t dockercudo-jupyter .`]
 - Запуск docker: [`docker-compose up`]
 - Проверка: [`docker ps -a`]
 - Останов: [`docker stop`]
