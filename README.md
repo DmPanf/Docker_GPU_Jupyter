@@ -8,8 +8,9 @@
 - а также параметры запуска каждого контейнера, такие как порты, переменные окружения и другие настройки.
 
 ### Базовые команды:
-
-- Создание Dockerfile: [`docker build -t dockercudo-jupyter .`]
+- **`docker run --gpus all -e JUPYTER_TOKEN='Pa$$wd-345' -p 8001:8001 --rm -v .:/app yolo8-jupyter-gpu`**
+- ... или ...
+- Создание Dockerfile: [`docker build -t yolo8-jupyter-gpu .`]
 - Запуск docker: [`docker-compose up`]
 - Проверка: [`docker ps -a`]
 - Останов: [`docker stop`]
