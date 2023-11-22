@@ -10,6 +10,9 @@ Before you begin, make sure you have the following:
 - Docker and NVIDIA-Docker installed.
 - Basic knowledge of Docker and Jupyter Notebooks.
 
+![image](https://github.com/DmPanf/Docker_GPU_Jupyter/assets/99917230/f90de448-3298-4a51-a81f-ff9d876e6279)
+
+
 ### Installation 🛠️
 
 #### Step 1: Clone the Repository
