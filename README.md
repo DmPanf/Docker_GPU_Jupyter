@@ -55,6 +55,8 @@ To run YOLOv8 in a Jupyter Notebook:
 2. Import necessary libraries and load your YOLOv8 model.
 3. Run your object detection tasks as required.
 
+---
+
 ### Troubleshooting 🛠
 
 - **GPU not recognized**: Ensure NVIDIA drivers and NVIDIA-Docker are properly installed.
