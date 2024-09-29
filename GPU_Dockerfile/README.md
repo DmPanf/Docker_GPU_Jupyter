@@ -54,12 +54,12 @@
 - **``sudo nvidia-ctk runtime configure --runtime=docker``**
 - ``sudo systemctl restart docker``
 
-  ## 3.0 Docker with GPU
+## 3.0 Docker with GPU
   - **``docker run -it --gpus all nvidia/cuda:11.4.0-base-ubuntu20.04 nvidia-smi``**
  
-  ## 4.0 Setting up Pytorch with GPU Support
-  ```Dockerfile
-  FROM nvidia/cuda:11.4.0-base-ubuntu20.04
+## 4.0 Setting up Pytorch with GPU Support
+```Dockerfile
+FROM nvidia/cuda:11.4.0-base-ubuntu20.04
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
