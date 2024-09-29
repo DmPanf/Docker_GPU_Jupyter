@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  got-ocr-app:
+    build: .  # Использовать локальный Dockerfile для сборки образа
+    ports:
+      - "8084:8084"
+    environment:
+      API_TOKEN: 12345678
+      PORT: 8084
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./GOT-OCR2_0:/app/GOT-OCR2_0
+    # Enable GPU access
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all   # Использовать все доступные GPU
+              capabilities: [gpu]
+#    tty: true
+#    stdin_open: true
